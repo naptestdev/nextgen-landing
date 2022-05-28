@@ -1,12 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.underline-nav-link {
-  @apply border-b-[3px] border-[#34CCFF];
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  @apply !text-black;
-}

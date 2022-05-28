@@ -7,11 +7,16 @@ export default function BottomSection() {
         alt=""
       />
       <h1 className="text-white text-3xl md:text-5xl mx-4 max-w-[600px] text-center z-10">
-        There's a reason you're full time with your creativity.
+        We are changing the world with technology
       </h1>
-      <button className="bg-blue-700 hover:bg-blue-600 transition duration-200 px-7 py-3 mt-6 uppercase text-xl text-white z-10">
-        Get Started
-      </button>
+      <a
+        href="https://mindx.vn/register/care?from=/students"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-primary hover:brightness-125 transition duration-200 px-5 py-2 md:px-7 md:py-3 uppercase text-xl text-white z-10"
+      >
+        Tìm hiểu thêm
+      </a>
     </div>
   );
 }

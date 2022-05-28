@@ -35,7 +35,7 @@ export default function Projects() {
             <h1 className="text-2xl">Kết quả tìm kiếm cho: {query}</h1>
           )}
 
-          <div className="flex gap-2 flex-wrap text-blue-500 text-xl mt-3">
+          <div className="flex gap-2 flex-wrap text-primary text-xl mt-3">
             <h1>Danh mục: </h1>
             <Link
               to={`/projects?${joinQueryStrings({
@@ -50,26 +50,26 @@ export default function Projects() {
               Tất cả
             </Link>
             {[
-              {
-                name: "Scratch",
-                id: "scratch",
-              },
+              // {
+              //   name: "Scratch",
+              //   id: "scratch",
+              // },
               {
                 name: "Game",
                 id: "game",
               },
-              {
-                name: "App",
-                id: "app",
-              },
+              // {
+              //   name: "App",
+              //   id: "app",
+              // },
               {
                 name: "Web",
                 id: "web",
               },
-              {
-                name: "Computer Science",
-                id: "cs",
-              },
+              // {
+              //   name: "Computer Science",
+              //   id: "cs",
+              // },
             ].map((item) => (
               <Link
                 className={
@@ -129,9 +129,9 @@ export default function Projects() {
               })}`}
               className={`${
                 !data.projectsConnection.pageInfo.hasPreviousPage
-                  ? "cursor-default pointer-events-none !bg-blue-300"
+                  ? "cursor-default pointer-events-none !bg-primary-disabled"
                   : ""
-              } bg-blue-600 hover:bg-blue-500 transition duration-200 px-3 py-1 text-lg text-white`}
+              } bg-primary hover:brightness-125 transition duration-200 px-3 py-1 text-lg text-white`}
             >
               Trang trước
             </Link>
@@ -147,10 +147,10 @@ export default function Projects() {
               })}`}
               className={`${
                 !data.projectsConnection.pageInfo.hasNextPage
-                  ? "cursor-default pointer-events-none !bg-blue-300"
+                  ? "cursor-default pointer-events-none !bg-primary-disabled"
                   : ""
               }
-            bg-blue-600 hover:bg-blue-500 transition duration-200 px-3 py-1 text-lg text-white`}
+            bg-primary hover:brightness-125 transition duration-200 px-3 py-1 text-lg text-white`}
             >
               Trang sau
             </Link>

@@ -6,7 +6,7 @@ export const MENTORS = [
 ];
 
 export const SPEAKERS = [
-  "/speakers/1_2. Hai An.jpg",
+  "/speakers/1_2. Hai An.png",
   "/speakers/3. Hue Le.jpg",
   "/speakers/4. Dao Nguyen.jpg",
   "/speakers/5. Dinh Thanh Xuan.jpg",

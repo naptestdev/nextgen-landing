@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useMemo, useState } from "react";
 
+import { Autoplay } from "swiper";
 import ImageView from "./ImageView";
 import { MENTORS } from "../shared/constants";
-import { Navigation } from "swiper";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 
 export default function Speakers() {
@@ -27,23 +27,26 @@ export default function Speakers() {
       />
 
       <div className="flex flex-col items-center gap-4 mb-10">
-        <h1 className="text-4xl font-bold text-center">Student Stories</h1>
-        <p className="text-xl text-center max-w-[420px] leading-5">
-          You aren't alone in your journey! We spotlight the highs, the lows,
-          and the awkward in-betweens of people just like you.
+        <h1 className="text-4xl font-bold text-center">
+          |NextGen| Giới thiệu mentors
+        </h1>
+        <p className="text-xl text-center max-w-[600px] leading-5">
+          Đồng hành cùng các tài năng nhí hoàn thiện dự án khởi nghiệp công nghệ
+          của mình không thể thiếu những "người cầm lái" chất lượng
         </p>
       </div>
 
       <div className="flex justify-center px-[7vw] md:px-[5vw] relative">
         <div className="w-full max-w-[1500px]">
           <Swiper
-            modules={[Navigation]}
+            modules={[Autoplay]}
             navigation
             spaceBetween={30}
             slidesPerView={slidesPerView}
             slidesPerGroup={1}
             onSwiper={(swiper) => setSwiper(swiper)}
             loop
+            autoplay={{ delay: 5000 }}
           >
             {MENTORS.map((item, index) => (
               <SwiperSlide key={index}>

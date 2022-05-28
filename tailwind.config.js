@@ -3,9 +3,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "nav-link": "#666666",
-        emerald: "#009999",
-        "nav-logo": "#3399CC",
+        primary: "#E8392F",
+        "primary-disabled": "#E8392F66",
       },
     },
   },

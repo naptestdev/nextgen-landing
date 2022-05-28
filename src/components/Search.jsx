@@ -14,7 +14,13 @@ export default function Search() {
   };
 
   return (
-    <div className="bg-[url(/hero-section.jpeg)] h-[200px] bg-cover bg-no-repeat bg-center flex justify-center items-center">
+    <div
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1653629154297-d01874fe01c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)",
+      }}
+      className="h-[200px] bg-cover bg-no-repeat bg-center flex justify-center items-center"
+    >
       <form
         onSubmit={handleFormSubmit}
         className="flex items-stretch w-full max-w-[500px]"
@@ -22,13 +28,13 @@ export default function Search() {
         <input
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          className="flex-grow py-3 px-4 placeholder:text-emerald outline-none focus:shadow-[0_0_0_4px_#0099994D] transition duration-300"
+          className="flex-grow py-3 px-4 placeholder:text-emerald outline-none focus:shadow-[0_0_0_4px_#E8392F4D] transition duration-300"
           type="text"
           placeholder="Search..."
         />
         <button
           type="submit"
-          className="flex-shrink bg-emerald w-20 flex justify-center items-center hover:brightness-[115%] transition duration-300"
+          className="flex-shrink bg-primary w-20 flex justify-center items-center hover:brightness-[115%] transition duration-300"
         >
           <svg
             className="h-4 w-4"

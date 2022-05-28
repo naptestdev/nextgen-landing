@@ -56,7 +56,7 @@ export const GET_PROJECT_BY_ID = gql`
       facebookLink
       demoLink
       image {
-        url(transformation: { image: { resize: { fit: clip, width: 300 } } })
+        url
       }
     }
   }

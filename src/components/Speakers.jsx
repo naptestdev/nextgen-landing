@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useMemo, useState } from "react";
 
+import { Autoplay } from "swiper";
 import ImageView from "./ImageView";
 import { SPEAKERS } from "../shared/constants";
 import { useMediaQuery } from "../hooks/useMediaQuery";
@@ -28,22 +29,26 @@ export default function Mentor() {
       />
 
       <div className="flex flex-col items-center gap-4 mb-10 mt-5 md:mt-10">
-        <h1 className="text-4xl font-bold text-center mx-3">
-          Learn from the industry icons
+        <h1 className="text-3xl md:text-4xl font-bold text-center mx-3">
+          |NextGen| Giới thiệu diễn giả
         </h1>
-        <p className="text-xl text-center max-w-[420px] leading-5 mx-3">
-          Pulitzer Prize winners. Cultural icons. Your new instructors. Unlock
-          700+ greats to inspire, teach, and support your passion.
+        <p className="text-xl text-center max-w-[700px] leading-5 mx-3">
+          Các chuyên gia trong lĩnh vực khởi nghiệp khác nhau từ công nghệ, kinh
+          doanh sẽ hướng dẫn các bạn học viên theo mỗi chủ đề nhất định như
+          thiết kế mô hình kinh doanh, marketing, chăm sóc khách hàng, gọi
+          vốn,....
         </p>
       </div>
 
       <div className="relative flex justify-center px-[7vw] md:px-[5vw]">
         <div className="w-full max-w-[1500px]">
           <Swiper
+            modules={[Autoplay]}
             navigation
             spaceBetween={35}
             slidesPerView="auto"
             loop
+            autoplay={{ delay: 5000 }}
             onSwiper={(swiper) => setSwiper(swiper)}
           >
             {SPEAKERS.map((item, index) => (
