@@ -40,7 +40,9 @@ export default function Project() {
             <p className="text-gray-500 text">
               {dayjs(data.project.createdAt).format("DD/MM/YYYY, H:mmA")}
             </p>
-            <p className="text-lg">{data.project.description}</p>
+            <p className="text-lg whitespace-pre-wrap">
+              {data.project.description}
+            </p>
           </div>
         )}
       </div>
